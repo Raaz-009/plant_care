@@ -44,15 +44,15 @@ Step 2: Create a Virtual Environment
 
 bash
 
-python -m venv venv
-source venv/bin/activate      # On macOS/Linux
-venv\Scripts\activate         # On Windows
+    python -m venv venv
+    source venv/bin/activate      # On macOS/Linux
+    venv\Scripts\activate         # On Windows
 
 Step 3: Install Dependencies
 
 bash
 
-pip install -r requirements.txt
+    pip install -r requirements.txt
 
 Step 4: Place the Model
 
@@ -62,7 +62,7 @@ Step 1: Start the Flask Server
 
 bash
 
-python app.py
+    python app.py
 
 Step 2: Access the Website
 
@@ -70,7 +70,7 @@ Open your browser and go to:
 
 arduino
 
-http://127.0.0.1:5000/
+    http://127.0.0.1:5000/
 
 Step 3: Upload an Image
 
