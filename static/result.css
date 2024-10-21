@@ -1,0 +1,76 @@
+/* Global Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+}
+
+/* Body Styling */
+body {
+    background: linear-gradient(135deg, #a8e063, #56ab2f);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Result Container */
+.result-container {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    max-width: 500px;
+}
+
+/* Image Styling */
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    margin: 15px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Headings */
+.result-container h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.result-container h2 {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #4d7c0f;
+}
+
+/* Paragraph Styling */
+.result-container p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+/* Back Button Styling */
+.back-button {
+    display: inline-block;
+    background-color: #76b852;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    font-weight: 500;
+}
+
+.back-button:hover {
+    background-color: #5a9a42;
+}

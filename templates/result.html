@@ -3,18 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Result</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Detection Result</title>
+    <link rel="stylesheet" href="/static/result.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
+    <div class="result-container">
         <h1>Detection Result</h1>
-    </header>
-    <div class="container">
         <div class="image-container">
-            <img src="{{ img_path }}" alt="Annotated Image">
+            <img src="/static/result.jpg" alt="Detection Result">
         </div>
+        <h2>Disease Information</h2>
+        <p>{{ info }}</p>
+        <a href="/" class="back-button">Go Back</a>
     </div>
-    <a href="/">Upload Another Image</a>
 </body>
 </html>

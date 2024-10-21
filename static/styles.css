@@ -1,69 +1,68 @@
-/* styles.css */
-body {
-    font-family: Arial, sans-serif;
+/* Apply global styling */
+* {
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
 }
 
-header {
-    background-color: #4CAF50;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-}
-
-h1 {
-    margin: 20px 0;
-}
-
-form {
+/* Center content on the page */
+body {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    margin-top: 50px;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #76b852, #8DC26F);
 }
 
+/* Container for the form */
+.container {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 400px;
+}
+
+/* Styling for the header */
+.container h1 {
+    margin-bottom: 10px;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+/* Description under the header */
+.container p {
+    margin-bottom: 20px;
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Input file styling */
 input[type="file"] {
-    margin: 10px 0;
+    margin-bottom: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    padding: 5px;
 }
 
+/* Button styling */
 button {
-    background-color: #4CAF50;
+    background-color: #76b852;
     color: white;
     border: none;
     padding: 10px 20px;
+    border-radius: 8px;
     cursor: pointer;
-    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
 }
 
+/* Button hover effect */
 button:hover {
-    background-color: #45a049;
-}
-
-.container {
-    display: flex;
-    justify-content: center;
-    margin-top: 30px;
-}
-
-.image-container img {
-    max-width: 100%;
-    height: auto;
-    border: 2px solid #ddd;
-    border-radius: 5px;
-    margin-top: 20px;
-}
-
-a {
-    display: block;
-    text-align: center;
-    margin: 20px 0;
-    text-decoration: none;
-    color: #4CAF50;
-    font-weight: bold;
-}
-
-a:hover {
-    text-decoration: underline;
+    background-color: #5a9a42;
 }
