@@ -59,5 +59,11 @@ def result():
     info = request.args.get("info", "No information available.")
     return render_template("result.html", info=info)
 
-if __name__ == "__main__":
-    app.run(debug=True)
+
+#for development
+# if __name__ == "__main__":
+#     app.run(debug=True)
+
+#for deployment
+if __name__ == '__main__':
+    app.run(host="0.0.0.0",port=4001)
