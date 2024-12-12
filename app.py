@@ -65,5 +65,9 @@ def result():
 #     app.run(debug=True)
 
 #for deployment
+# if __name__ == '__main__':
+#     app.run(host="0.0.0.0",port=4001)
+
 if __name__ == '__main__':
-    app.run(host="0.0.0.0",port=4001)
+    port = int(os.environ.get("PORT", 4001))  # Default to 4001 if PORT is not set
+    app.run(host="0.0.0.0", port=port)
