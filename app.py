@@ -2,10 +2,11 @@ from flask import Flask, render_template, request, redirect, url_for
 from PIL import Image
 from ultralytics import YOLO
 from langchain_groq import ChatGroq
-
+from dotenv import load_dotenv
+import os
 # Initialize Flask app
 app = Flask(__name__)
-
+load_dotenv()
 # Load the YOLOv8 model
 model = YOLO('best(1).pt')
 
@@ -13,7 +14,7 @@ model = YOLO('best(1).pt')
 llm = ChatGroq(
     model="llama-3.1-70b-versatile",
     temperature=0,
-    groq_api_key='GROQ_API_KEY',  # Replace with your API key
+    groq_api_key=os.getenv('GROQ_API_KEY'),                                                                                                                                            
     max_tokens=200,
     timeout=10,
     max_retries=2
